@@ -3,12 +3,12 @@ import { createServer } from 'node:http';
 
 const server = createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.write('<div style="display: grid; grid-template-columns: repeat(1fr, 2);height: 75vh; width: 75vw; border: solid; border-color: black;"><h1 style="color: red;"> River 3 - Boca 1 </h1><h2>Pepe</h2></div>');
+  res.write('<table style="border: 1px solid;"><tr><th style="border: 1px solid;">Operacion</th><th style="border: 1px solid;">Resultado</th></tr><tr><td style="border: 1px solid;">5+3</td><td style="border: 1px solid;">8</td></tr><tr><td style="border: 1px solid;">8-6</td><td style="border: 1px solid;">2</td></tr><tr><td style="border: 1px solid;">3*11</td><td style="border: 1px solid;">33</td></tr><tr><td style="border: 1px solid;">30/5</td><td style="border: 1px solid;">6</td></tr></table>');
 });
 
 // starts a simple http server locally on port 3000
 server.listen(8085, '127.0.0.1', () => {
-  console.log('Listening on 127.0.0.1:8085');
+  console.log('Listening on 127.0.1:8085');
 });
 
 // run with `node server.mjs`
