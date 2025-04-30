@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: white;
+}
+.grid{
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: auto;
+    margin-top: 20%;
+}
+.grid button{
+    width: 12vw;
+    height: 5vh;
+    justify-self: center;
+    align-self: center;
+    background-color: #e34747; /* Green */
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 2vh;
+}
+#creaciones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    justify-items: center;
+    font-size: 3vh;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- creo el audio -->
+    <audio id="audio">
+        <source src="https://www.bensound.com/bensound-music/bensound-ukulele.mp3" type="audio/mpeg">
+    </audio>
+    <!-- creo el contenedor para las creaciones -->
+    <div class="grid2">
+        <h1 id="text">Hola DOM</h1>
+        <img id="img" src="https://www.ole.com.ar/2025/04/27/4e4VRKfSG_1290x760__1.jpg" alt="">
+    </div>
+    <!-- creo el contenedor para los botones -->
+    <div class="grid">
+        <button ondblclick="boton()">Hacé dobleclick</button>
+        <button>Apretá la letra c</button>
+        <button id="boton3">Pasa el mouse por acá</button>
+        <button onclick="play()">Pone música</button>
+        <button onclick="pausar()">Pausa la música</button>
+        <button id="boton6" onclick="volumen()">Bajar el volumen</button>
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>
