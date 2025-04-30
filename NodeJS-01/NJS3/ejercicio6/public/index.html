@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- creo el formulario con sus requisitos -->
+    <form id="formulario">
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required><br>
+
+        <label>Edad:</label>
+        <input name="edad" required><br>
+
+        <label>Género:</label>
+        <select name="genero">
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+        </select><br>
+    
+        <button type="submit">Enviar</button>
+    </form>
+    <!-- div donde se muestran los datos enviados -->
+    <div id="creaciones"></div>
+    <script src="./script.js"></script>
+</body>
+</html>

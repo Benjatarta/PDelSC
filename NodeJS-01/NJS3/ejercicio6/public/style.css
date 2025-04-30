@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+form{
+    background-color: #e3e3e3;
+    padding: 2vw;
+    border-radius: 2vh;
+    max-width: 50vh;
+    margin: 0 auto;
+}
+label{
+    display: block;
+    margin-top: 2vh;
+}
+input, select {
+    width: 100%;
+}
+button {
+    margin-top: 3vh;
+    padding: 2vh;
+    background: #e34747;
+    color: white;
+    border: none;
+    border-radius: 2vh;
+    cursor: pointer;
+}
+#creaciones {
+    background-color: #eeeeeed6;
+    max-width: 50vh;
+    margin: 4vh auto;
+    padding: 5vh;
+    border-radius: 2vh;
+}
+#creaciones p {
+    margin: 1vh 0;
+}
