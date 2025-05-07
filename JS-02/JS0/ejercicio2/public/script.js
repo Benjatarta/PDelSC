@@ -1,10 +1,9 @@
-// Documento solo números y 8 dígitos
+//creo las distintas funciones para cada campo
 const documentoInput = document.getElementById("exampleInputDocumento");
 documentoInput.addEventListener("input", function (e) {
     e.target.value = e.target.value.replace(/\D/g, "").slice(0, 8);
 });
 
-// Formateo de la fecha (fuera del submit)
 const nacimientoInput = document.getElementById("exampleInputNacimiento");
 nacimientoInput.addEventListener("input", function (e) {
     let input = e.target.value.replace(/\D/g, "").substring(0, 8);
@@ -30,10 +29,10 @@ tieneHijosSelect.addEventListener("change", function() {
         document.getElementById("cantidadHijos").value = "";
     }
 });
-
+//creo la funcion para que solo permita numeros
 function soloNumeros(input) {
     input.addEventListener("input", function (e) {
-        e.target.value = e.target.value.replace(/\D/g, ""); // Elimina todo lo que no sea dígito
+        e.target.value = e.target.value.replace(/\D/g, "");
     });
 }
 soloNumeros(document.getElementById("exampleInputTelefono"));
@@ -41,7 +40,7 @@ soloNumeros(document.getElementById("cantidadHijos"));
 
 let tituloAgregado = false;
 
-// Manejo del formulario (submit)
+//creo la funcion del formulario, dentro todos los campos
 const formulario = document.getElementById("formulario");
 const listaDatos = document.getElementById("lista");
 const mensaje = document.getElementById("mensaje");
@@ -62,14 +61,14 @@ formulario.addEventListener('submit', function(event) {
     const hijos = document.getElementById("exampleInputHijos").value;
     const cantidadHijos = document.getElementById("cantidadHijos").value;
 
-    // Validar edad
+    //valido edad
     if (edad > 120 || edad < 0 || isNaN(edad)) {
         mensaje.textContent = "La edad no es válida.";
         mensaje.className = "alert alert-danger";
         return;
     }
 
-    // Validar fecha real
+    //valido la fecha real
     function fechaValida(fecha) {
         const [dia, mes, anio] = fecha.split("/").map(Number);
         const fechaObj = new Date(`${anio}-${mes}-${dia}`);
@@ -92,6 +91,7 @@ formulario.addEventListener('submit', function(event) {
     const nuevoUsuario = document.createElement('li');
 
     let hijosTexto = hijos === "Si" ? `Sí (${cantidadHijos})` : "No";
+    //muestro en formato de lista todos los campos
     nuevoUsuario.textContent = `Nombre: ${nombre} | Apellido: ${apellido} | Edad: ${edad} | Nacimiento: ${nacimiento} | Sexo: ${sexo} | Email: ${email} | Documento: ${documento} | Estado civil: ${estado} | Nacionalidad: ${nacionalidad} | Teléfono: ${telefono} | Hijos: ${hijosTexto}`;
     
     if (!tituloAgregado) {
@@ -100,13 +100,13 @@ formulario.addEventListener('submit', function(event) {
         listaDatos.appendChild(titulo);
         tituloAgregado = true;
     }
-
+    //verifico mediante js
     if (!nombre || !apellido || !edad || !nacimiento || !sexo || !email || !documento || !estado || !nacionalidad || !telefono || !hijosTexto) {
         mensaje.textContent = "Por favor, completá todos los campos.";
         mensaje.className = "alert alert-danger";
         return;
     }
-
+    //añado el usuario y reseteo el formulario
     listaDatos.appendChild(nuevoUsuario);
     formulario.reset();
 });
