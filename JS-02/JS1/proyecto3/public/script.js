@@ -1,29 +1,23 @@
-// Obtener elementos del DOM para colores
+// creo las constantes
 const formularioColores = document.getElementById("formularioColores");
 const colorSelect = document.getElementById('colorSelect');
 const listaColores = document.getElementById('listaColores');
-
-// Array para almacenar los colores
 let colores = [];
 
-// Función para agregar los colores seleccionados
+// funcion para agregar colores
 formularioColores.addEventListener('submit', function(event) {
-    event.preventDefault();  // Evita la recarga de la página
-
-    // Obtener los colores seleccionados
+    event.preventDefault();  
     const selectedOptions = Array.from(colorSelect.selectedOptions);
     const selectedColors = selectedOptions.map(option => option.value);
 
-    // Agregar los colores al principio del array
     colores.unshift(...selectedColors); 
 
-    // Mostrar los colores en la lista
     mostrarColores();
 });
 
-// Función para mostrar los colores en la lista
+// funcion para mostrar la lista de colores
 function mostrarColores() {
-    listaColores.innerHTML = '';  // Limpiar la lista antes de mostrar los nuevos colores
+    listaColores.innerHTML = '';  
 
     colores.forEach(color => {
         const li = document.createElement('li');
@@ -33,30 +27,28 @@ function mostrarColores() {
     });
 }
 
-// Obtener elementos del DOM para tareas
+// creo las constantes
 const formularioTareas = document.getElementById("formularioTareas");
 const inputTarea = document.getElementById("inputTarea");
 const listaTareas = document.getElementById("listaTareas");
-
-// Array para almacenar las tareas
 let tareasUrgentes = [];
 
-// Función para agregar una tarea urgente
+// función para agregar una tarea urgente
 formularioTareas.addEventListener('submit', function(event) {
-    event.preventDefault();  // Evita la recarga de la página
+    event.preventDefault();  
 
-    const tareaUrgente = inputTarea.value.trim();  // Obtener la tarea
+    const tareaUrgente = inputTarea.value.trim();  
 
     if (tareaUrgente) {
-        tareasUrgentes.unshift(tareaUrgente);  // Agregar tarea urgente al principio
+        tareasUrgentes.unshift(tareaUrgente);
         mostrarTareas();
-        inputTarea.value = "";  // Limpiar el campo de texto
+        inputTarea.value = "";  
     }
 });
 
-// Función para mostrar las tareas urgentes en la lista
+// función para mostrar las tareas urgentes en la lista
 function mostrarTareas() {
-    listaTareas.innerHTML = '';  // Limpiar la lista antes de mostrar las nuevas tareas
+    listaTareas.innerHTML = '';
 
     tareasUrgentes.forEach(tarea => {
         const li = document.createElement('li');
@@ -66,30 +58,27 @@ function mostrarTareas() {
     });
 }
 
-// Obtener elementos del DOM para usuarios conectados
+// creo las constantes
 const formularioUsuarios = document.getElementById("formularioUsuarios");
 const inputUsuario = document.getElementById("inputUsuario");
 const listaUsuarios = document.getElementById("listaUsuarios");
-
-// Array para almacenar los usuarios conectados
 let usuariosConectados = [];
 
-// Función para agregar un usuario conectado
+// función para agregar un usuario conectado
 formularioUsuarios.addEventListener('submit', function(event) {
-    event.preventDefault();  // Evita la recarga de la página
+    event.preventDefault();  
 
-    const nombreUsuario = inputUsuario.value.trim();  // Obtener el nombre del usuario
-
+    const nombreUsuario = inputUsuario.value.trim(); 
     if (nombreUsuario) {
-        usuariosConectados.unshift(nombreUsuario);  // Agregar el usuario al principio del array
+        usuariosConectados.unshift(nombreUsuario); 
         mostrarUsuarios();
-        inputUsuario.value = "";  // Limpiar el campo de texto
+        inputUsuario.value = ""; 
     }
 });
 
-// Función para mostrar los usuarios conectados en la lista
+// función para mostrar los usuarios conectados en la lista
 function mostrarUsuarios() {
-    listaUsuarios.innerHTML = '';  // Limpiar la lista antes de mostrar los nuevos usuarios
+    listaUsuarios.innerHTML = ''; 
 
     usuariosConectados.forEach(usuario => {
         const li = document.createElement('li');

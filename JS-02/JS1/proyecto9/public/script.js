@@ -1,9 +1,10 @@
-// Ejercicio 1: Saludo a cada nombre
+// creo las constantes 
 const formNombres = document.getElementById("formNombres");
 const inputNombre = document.getElementById("inputNombre");
 const resultadoNombres = document.getElementById("resultadoNombres");
 let nombres = [];
 
+//creo la funcion para saludar
 formNombres.addEventListener("submit", function (e) {
   e.preventDefault();
   if (inputNombre.value.trim() !== "") {
@@ -18,12 +19,13 @@ formNombres.addEventListener("submit", function (e) {
   }
 });
 
-// Ejercicio 2: Doble de cada número
+// creo las constantess
 const formNumeros = document.getElementById("formNumeros");
 const inputNumero = document.getElementById("inputNumero");
 const resultadoNumeros = document.getElementById("resultadoNumeros");
 let numeros = [];
 
+//  creo la funcion para multiplicar
 formNumeros.addEventListener("submit", function (e) {
   e.preventDefault();
   const numero = Number(inputNumero.value);
@@ -39,13 +41,14 @@ formNumeros.addEventListener("submit", function (e) {
   }
 });
 
-// Ejercicio 3: Mostrar nombre y edad
+// creo las constantes
 const formPersonas = document.getElementById("formPersonas");
 const inputPersonaNombre = document.getElementById("inputPersonaNombre");
 const inputPersonaEdad = document.getElementById("inputPersonaEdad");
 const resultadoPersonas = document.getElementById("resultadoPersonas");
 let personas = [];
 
+// creo la funcion para crear persona
 formPersonas.addEventListener("submit", function (e) {
   e.preventDefault();
   const nombre = inputPersonaNombre.value.trim();

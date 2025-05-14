@@ -1,4 +1,4 @@
-// Ordenar números
+// funcion para ordenar los numeros
 document.getElementById('formNumeros').addEventListener('submit', function(e) {
     e.preventDefault();
     const numeros = document.getElementById('inputNumeros').value
@@ -8,7 +8,7 @@ document.getElementById('formNumeros').addEventListener('submit', function(e) {
     document.getElementById('resultadoNumeros').textContent = `Ordenados: ${ordenados.join(', ')}`;
   });
   
-  // Ordenar palabras
+  // funcion para ordenar las palabtas
   document.getElementById('formPalabras').addEventListener('submit', function(e) {
     e.preventDefault();
     const palabras = document.getElementById('inputPalabras').value
@@ -18,7 +18,7 @@ document.getElementById('formNumeros').addEventListener('submit', function(e) {
     document.getElementById('resultadoPalabras').textContent = `Ordenadas: ${ordenadas.join(', ')}`;
   });
   
-  // Ordenar objetos por edad
+  // funcion para ordenar por edad
   document.getElementById('formObjetos').addEventListener('submit', function(e) {
     e.preventDefault();
     const entrada = document.getElementById('inputObjetos').value.split(',');

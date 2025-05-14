@@ -1,34 +1,29 @@
-// Operación 1: Copiar los primeros 3 elementos de un array de números
+// funcion para copiar los primeros 3
 document.getElementById('formularioNumeros').addEventListener('submit', function(e) {
     e.preventDefault();
     const input = document.getElementById('inputNumeros').value;
-    const numeros = input.split(',').map(num => parseInt(num.trim())); // Convertir a número
-    const primerosTres = numeros.slice(0, 3); // Copiar los primeros 3 elementos
+    const numeros = input.split(',').map(num => parseInt(num.trim()));
+    const primerosTres = numeros.slice(0, 3);
     document.getElementById('resultadoNumeros').textContent = primerosTres.join(', ');
     limpiarInput('inputNumeros');
 });
 
-// Operación 2: Copiar parte del array de películas
+// funcion para las peliculas
 document.getElementById('formularioPeliculas').addEventListener('submit', function(e) {
     e.preventDefault();
     const input = document.getElementById('inputPeliculas').value;
     const peliculas = input.split(',').map(pelicula => pelicula.trim());
-    const copiaPeliculas = peliculas.slice(2, 4); // Copiar desde la posición 2 hasta la 4
+    const copiaPeliculas = peliculas.slice(2, 4); 
     document.getElementById('resultadoPeliculas').textContent = copiaPeliculas.join(', ');
     limpiarInput('inputPeliculas');
 });
 
-// Operación 3: Copiar los últimos 3 elementos de un array
+// funcion para copiar los ultimos 3
 document.getElementById('formularioUltimos').addEventListener('submit', function(e) {
     e.preventDefault();
     const input = document.getElementById('inputUltimos').value;
-    const numeros = input.split(',').map(num => parseInt(num.trim())); // Convertir a número
-    const ultimosTres = numeros.slice(-3); // Copiar los últimos 3 elementos
+    const numeros = input.split(',').map(num => parseInt(num.trim())); 
+    const ultimosTres = numeros.slice(-3); 
     document.getElementById('resultadoUltimos').textContent = ultimosTres.join(', ');
     limpiarInput('inputUltimos');
 });
-
-// Función para limpiar el input después de cada acción
-function limpiarInput(id) {
-    document.getElementById(id).value = '';
-}

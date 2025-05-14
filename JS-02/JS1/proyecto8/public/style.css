@@ -1,38 +1,15 @@
-/* Estilo global */
 * {
     padding: 0;
     margin: 0;
 }
 
-.container {
-    max-width: 600px;
-    margin: 0 auto;
+body {
+    background-color: #f5f5f5;
 }
 
-/* Estilo para los botones */
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
-}
-
-/* Agregar un poco de espacio entre los títulos y los formularios */
-h4 {
-    margin-top: 20px;
-}
-
-/* Estilo opcional para los resultados */
-#resultadoAdmin,
-#resultadoVerde,
-#resultadoNumero {
-    font-weight: bold;
-    color: #333;
-    padding: 5px;
-    border-radius: 4px;
-    background-color: #f8f9fa;
-    margin-top: 10px;
+form {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px #ddd;
 }

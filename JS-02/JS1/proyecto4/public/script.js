@@ -1,30 +1,26 @@
-// Obtener elementos del DOM para los números
+// creo las constantes
 const formularioNumero = document.getElementById("formularioNumero");
 const inputNumero = document.getElementById("inputNumero");
 const listaNumeros = document.getElementById("listaNumeros");
 const eliminarNumeroBtn = document.getElementById("eliminarNumero");
-
-// Array para almacenar los números enteros
 let numeros = [];
 
-// Función para manejar el envío de un número entero
+// funcion para el numero
 formularioNumero.addEventListener('submit', function(event) {
-    event.preventDefault();  // Evita la recarga de la página
-
-    const numero = parseInt(inputNumero.value.trim(), 10);  // Obtener el número ingresado
-
+    event.preventDefault();
+    const numero = parseInt(inputNumero.value.trim(), 10);  
     if (!isNaN(numero)) {
-        numeros.push(numero);  // Agregar el número al final del array
+        numeros.push(numero);
         mostrarNumeros();
-        inputNumero.value = "";  // Limpiar el campo de texto
+        inputNumero.value = ""; 
     }
 });
 
-// Función para eliminar el primer número del array
+// funcion para eliminar
 eliminarNumeroBtn.addEventListener('click', function() {
     if (numeros.length > 0) {
-        numeros.shift();  // Eliminar el primer número del array
-        mostrarNumeros();  // Actualizar la lista
+        numeros.shift();  
+        mostrarNumeros(); 
     }
 });
 

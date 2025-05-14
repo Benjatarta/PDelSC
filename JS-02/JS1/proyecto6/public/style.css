@@ -3,31 +3,13 @@
     margin: 0;
 }
 
-.container {
-    max-width: 600px;
-    margin: 0 auto;
+body {
+    background-color: #f5f5f5;
 }
 
 form {
-    margin-bottom: 20px;
-}
-
-button {
-    width: 100%;
-}
-
-@media screen and (max-width: 425px) {
-    form {
-        display: inline-flex;
-        justify-self: center;
-        width: 75vw;
-        padding: 1vh;
-        background: rgb(241, 241, 241);
-        border-radius: 2vh;
-        box-shadow: 5px 5px 5px 5px #888888;
-    }
-
-    .titulo {
-        font-size: 1vh;
-    }
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px #ddd;
 }

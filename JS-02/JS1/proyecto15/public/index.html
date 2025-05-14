@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- creo el formulario uno -->
+    <div class="container mt-5">
+    <form id="formMensaje" class="mb-4">
+        <label for="inputMensaje" class="form-label">Ingresa un mensaje encriptado</label>
+        <input type="text" class="form-control" id="inputMensaje" placeholder="Ejemplo: Hola (odnum)!" />
+        <button type="submit" class="btn btn-primary mt-2">Decodificar Mensaje</button>
+        <p class="mt-2" id="resultadoMensaje"></p>
+    </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

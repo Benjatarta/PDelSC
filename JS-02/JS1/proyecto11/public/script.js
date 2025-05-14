@@ -1,4 +1,4 @@
-// Filtrar números > 10
+// funcion para filtrar mayor que 10
 document.getElementById('formNumeros').addEventListener('submit', function(e) {
     e.preventDefault();
     const numeros = document.getElementById('inputNumeros').value.split(',').map(n => parseFloat(n.trim()));
@@ -6,7 +6,7 @@ document.getElementById('formNumeros').addEventListener('submit', function(e) {
     document.getElementById('resultadoNumeros').textContent = `Resultado: ${resultado.join(', ')}`;
   });
   
-  // Palabras con más de 5 letras
+  // funcion para filtrar palabras de mas de cinco letras
   document.getElementById('formPalabras').addEventListener('submit', function(e) {
     e.preventDefault();
     const palabras = document.getElementById('inputPalabras').value.split(',').map(p => p.trim());
@@ -14,7 +14,7 @@ document.getElementById('formNumeros').addEventListener('submit', function(e) {
     document.getElementById('resultadoPalabras').textContent = `Resultado: ${resultado.join(', ')}`;
   });
   
-  // Usuarios activos
+  // funcion para los usuarios activos
   document.getElementById('formUsuarios').addEventListener('submit', function(e) {
     e.preventDefault();
     const input = document.getElementById('inputUsuarios').value.split(',').map(u => u.trim());

@@ -1,4 +1,4 @@
-// Multiplicar por 3
+// funcion para multiplicar por 3
 document.getElementById('formMultiplicar').addEventListener('submit', function(e) {
     e.preventDefault();
     const numeros = document.getElementById('inputNumeros').value.split(',').map(n => Number(n.trim()));
@@ -6,7 +6,7 @@ document.getElementById('formMultiplicar').addEventListener('submit', function(e
     document.getElementById('resultadoMultiplicar').textContent = `Resultado: ${resultado.join(', ')}`;
   });
   
-  // Convertir a mayúsculas
+  // funcion para convertir en mayus
   document.getElementById('formMayusculas').addEventListener('submit', function(e) {
     e.preventDefault();
     const nombres = document.getElementById('inputNombres').value.split(',').map(n => n.trim());
@@ -14,7 +14,7 @@ document.getElementById('formMultiplicar').addEventListener('submit', function(e
     document.getElementById('resultadoMayusculas').textContent = `Resultado: ${resultado.join(', ')}`;
   });
   
-  // Sumar 21% de IVA
+  // funcion para sumar el iva
   document.getElementById('formIVA').addEventListener('submit', function(e) {
     e.preventDefault();
     const precios = document.getElementById('inputPrecios').value.split(',').map(p => parseFloat(p.trim()));

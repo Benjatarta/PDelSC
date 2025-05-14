@@ -1,3 +1,4 @@
+//creo las constantes
 const formulario = document.getElementById("formulario");
 const listaDatos = document.getElementById("lista");
 let frutas = [];

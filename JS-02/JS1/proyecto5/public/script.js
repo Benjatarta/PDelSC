@@ -1,6 +1,6 @@
 let letras = [];
 
-// Cargar letra individual
+// funcion para cargar la letra
 document.getElementById('formularioPalabra').addEventListener('submit', function(e) {
     e.preventDefault();
     const letra = document.getElementById('inputLetra').value.trim();
@@ -11,7 +11,7 @@ document.getElementById('formularioPalabra').addEventListener('submit', function
     }
 });
 
-// Eliminar desde la posición 1 (2 letras)
+// funcion para eliminar
 document.getElementById('btnEliminar').addEventListener('click', function() {
     if (letras.length > 1) {
         letras.splice(1, 2);
@@ -19,12 +19,12 @@ document.getElementById('btnEliminar').addEventListener('click', function() {
     actualizarLista('listaLetras1');
 });
 
-// Insertar en la segunda posición (sin eliminar)
+// funcion para insertar desde la posicion dos
 document.getElementById('formularioInsertar').addEventListener('submit', function(e) {
     e.preventDefault();
     const nuevaLetra = document.getElementById('inputInsertar').value.trim();
     if (nuevaLetra) {
-        letras.splice(1, 0, nuevaLetra); // Insertar en la segunda posición sin eliminar
+        letras.splice(1, 0, nuevaLetra); 
         actualizarLista('listaLetras2');
         limpiarInputs(['inputInsertar']);
     }

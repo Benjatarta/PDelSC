@@ -1,3 +1,4 @@
+//creo las constantes
 const formularioAnimal = document.getElementById("formularioAnimal");
 const formularioCompra = document.getElementById("formularioCompra");
 const formularioBucle = document.getElementById("formularioBucle");
@@ -51,10 +52,9 @@ formularioBucle.addEventListener('submit', function(event) {
     }
 });
 
-// Mostrar animales en la lista
+// mostrar animales en la lista
 function mostrarAnimales() {
-    listaDatosAnimales.innerHTML = "";  // Limpiar la lista de animales antes de mostrar los nuevos datos
-
+    listaDatosAnimales.innerHTML = ""; 
     animales.forEach(function(animal) {
         const li = document.createElement("li");
         li.textContent = animal;
@@ -63,9 +63,9 @@ function mostrarAnimales() {
     });
 }
 
-// Mostrar compras en la lista
+// mostrar compras en la lista
 function mostrarCompras() {
-    listaDatosCompras.innerHTML = "";  // Limpiar la lista de compras antes de mostrar los nuevos datos
+    listaDatosCompras.innerHTML = "";  
 
     listaCompras.forEach(function(compra) {
         const li = document.createElement("li");
@@ -75,9 +75,9 @@ function mostrarCompras() {
     });
 }
 
-// Mostrar bucles en la lista (Formulario 3)
+// mostrar bucles
 function mostrarBucle() {
-    listaDatosBucle.innerHTML = "";  // Limpiar la lista de bucles antes de mostrar los nuevos datos
+    listaDatosBucle.innerHTML = ""; 
 
     arrayBucle.forEach(function(bucle) {
         const li = document.createElement("li");
@@ -87,26 +87,26 @@ function mostrarBucle() {
     });
 }
 
-// Eliminar el último animal de la lista
+// eliminar el ultimo animal
 eliminarBtn.addEventListener("click", function() {
     if (animales.length > 0) {
-        animales.pop();  // Eliminar el último animal del array
-        mostrarAnimales();  // Actualizar la lista visual
+        animales.pop(); 
+        mostrarAnimales();  
     }
 });
 
-// Eliminar la última compra de la lista
+// eliminar la ultima compra
 eliminarCompra.addEventListener("click", function() {
     if (listaCompras.length > 0) {
-        listaCompras.pop();  // Eliminar la última compra del array
-        mostrarCompras();  // Actualizar la lista visual
+        listaCompras.pop(); 
+        mostrarCompras();  
     }
 });
 
-// Eliminar todo del arrayBucle
+// elimina todo
 eliminarBucle.addEventListener("click", function() {
     while (arrayBucle.length > 0) {
-        arrayBucle.pop();  // Elimina el último elemento del array
+        arrayBucle.pop();  
     }
-    mostrarBucle();  // Actualiza la lista visual
+    mostrarBucle(); 
 });

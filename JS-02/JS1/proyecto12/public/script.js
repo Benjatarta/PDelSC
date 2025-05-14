@@ -1,4 +1,4 @@
-// Sumar elementos
+// funcion para sumar
 document.getElementById('formSuma').addEventListener('submit', function(e) {
     e.preventDefault();
     const valores = document.getElementById('inputSuma').value.split(',').map(n => parseFloat(n.trim()));
@@ -6,7 +6,7 @@ document.getElementById('formSuma').addEventListener('submit', function(e) {
     document.getElementById('resultadoSuma').textContent = `Suma total: ${suma}`;
   });
   
-  // Multiplicar elementos
+  // funcion para multiplicar
   document.getElementById('formMultiplicacion').addEventListener('submit', function(e) {
     e.preventDefault();
     const valores = document.getElementById('inputMultiplicacion').value.split(',').map(n => parseFloat(n.trim()));
@@ -14,7 +14,7 @@ document.getElementById('formSuma').addEventListener('submit', function(e) {
     document.getElementById('resultadoMultiplicacion').textContent = `Multiplicación total: ${multiplicacion}`;
   });
   
-  // Total de precios
+  // funcion para el total
   document.getElementById('formPrecios').addEventListener('submit', function(e) {
     e.preventDefault();
     const precios = document.getElementById('inputPrecios').value.split(',').map(p => parseFloat(p.trim()));

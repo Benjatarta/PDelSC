@@ -3,59 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
-    <title>Eliminar Primer Elemento</title>
+    <title>Document</title>
 </head>
 <body>
+    <!-- creo el contenedor y el formulario uno -->
     <div class="container">
         <div class="grid-container">
-            <!-- Formulario de Números Enteros -->
             <div class="grid-item">
-                <h1>Eliminar Primer Número de un Array de Enteros</h1>
+                <h1>Eliminar primer número de un array de enteros</h1>
                 <form id="formularioNumero" class="form-container">
                     <div class="mb-3">
                         <label for="inputNumero" class="form-label">Ingrese un número entero</label>
                         <input type="number" class="form-control" id="inputNumero" placeholder="Número entero">
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar Número</button>
+                    <button type="submit" class="btn btn-primary">Enviar número</button>
                 </form>
 
-                <button id="eliminarNumero" class="btn btn-danger mt-3">Eliminar Primer Número</button>
+                <button id="eliminarNumero" class="btn btn-danger mt-3">Eliminar primer número</button>
 
-                <h2 class="mt-5">Lista de Números</h2>
-                <ul id="listaNumeros" class="list-group mt-3"></ul> <!-- Lista de números -->
+                <h2 class="mt-5">Lista de números</h2>
+                <ul id="listaNumeros" class="list-group mt-3"></ul>
             </div>
 
-            <!-- Formulario de Mensajes de Chat -->
+            <!-- creo el formulario dos -->
             <div class="grid-item">
-                <h1>Eliminar Primer Mensaje de Chat</h1>
+                <h1>Eliminar primer mensaje de Chat</h1>
                 <form id="formularioMensaje" class="form-container">
                     <div class="mb-3">
                         <label for="inputMensaje" class="form-label">Ingrese un mensaje</label>
                         <input type="text" class="form-control" id="inputMensaje" placeholder="Mensaje de chat">
                     </div>
-                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
                 </form>
 
-                <button id="eliminarMensaje" class="btn btn-danger mt-3">Eliminar Primer Mensaje</button>
+                <button id="eliminarMensaje" class="btn btn-danger mt-3">Eliminar primer mensaje</button>
 
-                <h2 class="mt-5">Lista de Mensajes de Chat</h2>
-                <ul id="listaMensajes" class="list-group mt-3"></ul> <!-- Lista de mensajes -->
+                <h2 class="mt-5">Lista de mensajes de Chat</h2>
+                <ul id="listaMensajes" class="list-group mt-3"></ul> 
             </div>
+
+            <!-- creo el formulario tres -->
             <div class="grid-item">
-                <h1>Cola de Atención al Cliente</h1>
+                <h1>Cola de atención al cliente</h1>
                 <form id="formularioCliente" class="form-container">
                     <div class="mb-3">
-                        <label for="inputCliente" class="form-label">Nombre del Cliente</label>
+                        <label for="inputCliente" class="form-label">Nombre del cliente</label>
                         <input type="text" class="form-control" id="inputCliente" placeholder="Nombre del cliente">
                     </div>
-                    <button type="submit" class="btn btn-primary">Agregar Cliente</button>
+                    <button type="submit" class="btn btn-primary">Agregar cliente</button>
                 </form>
 
-                <button id="atenderCliente" class="btn btn-danger mt-3">Atender al Primer Cliente</button>
+                <button id="atenderCliente" class="btn btn-danger mt-3">Atender al primer cliente</button>
 
-                <h2 class="mt-5">Cola de Clientes</h2>
-                <ul id="listaClientes" class="list-group mt-3"></ul> <!-- Lista de clientes -->
+                <h2 class="mt-5">Cola de clientes</h2>
+                <ul id="listaClientes" class="list-group mt-3"></ul>
             </div>
         </div>
     </div>
