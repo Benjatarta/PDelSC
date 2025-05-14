@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <title>Operaciones con Arrays</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h3>Operaciones con Arrays</h3>
+
+        <!-- Formulario 1: Copiar los primeros 3 elementos de un array de números -->
+        <form id="formularioNumeros">
+            <label for="inputNumeros" class="form-label">Ingresa números separados por coma:</label>
+            <input type="text" id="inputNumeros" class="form-control" placeholder="Ej: 1, 2, 3, 4, 5" required>
+            <button type="submit" class="btn btn-primary mt-2">Copiar los primeros 3 números</button>
+        </form>
+        <p><strong>Primeros 3 números copiados:</strong> <span id="resultadoNumeros"></span></p>
+
+        <!-- Formulario 2: Crear copia parcial de un array de películas -->
+        <form id="formularioPeliculas">
+            <label for="inputPeliculas" class="form-label">Ingresa películas separadas por coma:</label>
+            <input type="text" id="inputPeliculas" class="form-control" placeholder="Ej: Inception, The Matrix, Titanic, Avatar" required>
+            <button type="submit" class="btn btn-primary mt-2">Copiar de la posición 2 a la 4</button>
+        </form>
+        <p><strong>Películas copiadas:</strong> <span id="resultadoPeliculas"></span></p>
+
+        <!-- Formulario 3: Copiar los últimos 3 elementos sin modificarlos -->
+        <form id="formularioUltimos">
+            <label for="inputUltimos" class="form-label">Ingresa números separados por coma:</label>
+            <input type="text" id="inputUltimos" class="form-control" placeholder="Ej: 1, 2, 3, 4, 5" required>
+            <button type="submit" class="btn btn-primary mt-2">Copiar los últimos 3 elementos</button>
+        </form>
+        <p><strong>Últimos 3 números copiados:</strong> <span id="resultadoUltimos"></span></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

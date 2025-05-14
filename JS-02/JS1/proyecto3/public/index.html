@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container">
+            <!-- Casilla: Formulario de Colores -->
+            <div class="grid-item">
+                <h1>Formulario de Colores</h1>
+                <form id="formularioColores" class="form-container">
+                    <div class="mb-3">
+                        <select id="colorSelect" class="form-select" multiple>
+                            <option value="Rojo">Rojo</option>
+                            <option value="Verde">Verde</option>
+                            <option value="Azul">Azul</option>
+                            <option value="Amarillo">Amarillo</option>
+                            <option value="Naranja">Naranja</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="boton">Enviar</button>
+                </form>
+
+                <h2 class="mt-5">Colores Seleccionados</h2>
+                <ul id="listaColores" class="list-group mt-3"></ul> <!-- Lista de colores seleccionados -->
+            </div>
+
+            <!-- Casilla: Formulario de Tareas Urgentes -->
+            <div class="grid-item">
+                <h1>Formulario de Tareas Urgentes</h1>
+                <form id="formularioTareas" class="form-container">
+                    <div class="mb-3">
+                        <label for="inputTarea" class="form-label">Nueva tarea urgente</label>
+                        <input type="text" class="form-control" id="inputTarea" placeholder="Ingrese una tarea urgente">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Agregar tarea urgente</button>
+                </form>
+
+                <h2 class="mt-5">Lista de Tareas Urgentes</h2>
+                <ul id="listaTareas" class="list-group mt-3"></ul> <!-- Lista de tareas urgentes -->
+            </div>
+
+            <!-- Casilla: Formulario de Usuarios Conectados -->
+            <div class="grid-item">
+                <h1>Formulario de Usuarios Conectados</h1>
+                <form id="formularioUsuarios" class="form-container">
+                    <div class="mb-3">
+                        <label for="inputUsuario" class="form-label">Nuevo Usuario</label>
+                        <input type="text" class="form-control" id="inputUsuario" placeholder="Ingrese el nombre del usuario">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Agregar Usuario</button>
+                </form>
+
+                <h2 class="mt-5">Usuarios Conectados</h2>
+                <ul id="listaUsuarios" class="list-group mt-3"></ul> <!-- Lista de usuarios conectados -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

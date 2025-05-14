@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+}
+
+@media screen and (max-width: 425px) {
+    form {
+        display: inline-flex;
+        justify-self: center;
+        width: 75vw;
+        padding: 1vh;
+        background: rgb(241, 241, 241);
+        border-radius: 2vh;
+        box-shadow: 5px 5px 5px 5px #888888;
+    }
+
+    .titulo {
+        font-size: 1vh;
+    }
+}

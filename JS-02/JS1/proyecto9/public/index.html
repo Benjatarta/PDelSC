@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>forEach - Ejercicios</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2>forEach - Ejercicios</h2>
+
+    <!-- 1. Saludo a nombres -->
+    <form id="formNombres" class="mb-3">
+      <label for="inputNombre" class="form-label">Ingresa un nombre:</label>
+      <input type="text" id="inputNombre" class="form-control mb-2" placeholder="Ej: Juan" />
+      <button type="submit" class="btn btn-primary">Agregar Nombre</button>
+      <div id="resultadoNombres" class="mt-2"></div>
+    </form>
+
+    <!-- 2. Doblar números -->
+    <form id="formNumeros" class="mb-3">
+      <label for="inputNumero" class="form-label">Ingresa un número:</label>
+      <input type="number" id="inputNumero" class="form-control mb-2" placeholder="Ej: 5" />
+      <button type="submit" class="btn btn-primary">Agregar Número</button>
+      <div id="resultadoNumeros" class="mt-2"></div>
+    </form>
+
+    <!-- 3. Objetos {nombre, edad} -->
+    <form id="formPersonas" class="mb-3">
+      <label class="form-label">Ingresa un nombre y una edad:</label>
+      <input type="text" id="inputPersonaNombre" class="form-control mb-2" placeholder="Nombre" />
+      <input type="number" id="inputPersonaEdad" class="form-control mb-2" placeholder="Edad" />
+      <button type="submit" class="btn btn-primary">Agregar Persona</button>
+      <div id="resultadoPersonas" class="mt-2"></div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

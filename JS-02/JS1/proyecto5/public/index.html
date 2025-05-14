@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <title>Modificar Palabra en Array</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h3>Ejercicios con Letras</h3>
+
+        <!-- Formulario 1: Cargar letra y eliminar desde posición 1 -->
+        <form id="formularioPalabra">
+            <label for="inputLetra" class="form-label">Ingresa una letra:</label>
+            <input type="text" id="inputLetra" maxlength="1" class="form-control" placeholder="Ej: A" required>
+            <button type="submit" class="btn btn-primary mt-2">Cargar Letra</button>
+        </form>
+        <button id="btnEliminar" class="btn btn-danger mt-2">Eliminar desde posición 1</button>
+        <p><strong>Letras cargadas:</strong> <span id="listaLetras1"></span></p>
+
+        <!-- Formulario 2: Insertar en la segunda posición (sin eliminar) -->
+        <form id="formularioInsertar">
+            <label for="inputInsertar" class="form-label">Insertar en la posición 2 (sin eliminar):</label>
+            <input type="text" id="inputInsertar" class="form-control" placeholder="Ej: B" required>
+            <button type="submit" class="btn btn-success mt-2">Insertar</button>
+        </form>
+        <p><strong>Resultado:</strong> <span id="listaLetras2"></span></p>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

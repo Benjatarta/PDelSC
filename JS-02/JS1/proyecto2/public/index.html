@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h1>Formulario de Animales</h1>
+                <form id="formularioAnimal" class="form-container">
+                    <div class="mb-3">
+                        <label for="exampleInputAnimal" class="form-label">Animales</label>
+                        <input type="text" class="form-control" id="exampleInputAnimal" placeholder="Ingrese un animal">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="boton">Enviar</button>
+                </form>
+
+                <button id="eliminarBtn" class="btn btn-danger mt-3">Eliminar último animal</button>
+
+                <h2 class="mt-5">Lista de Animales</h2>
+                <ul id="lista" class="list-group mt-3"></ul>
+            </div>
+
+            <div class="grid-item">
+                <h2>Formulario de Compras</h2>
+                <form id="formularioCompra">
+                    <div class="mb-3">
+                        <label for="inputForm2" class="form-label">Lista de compras</label>
+                        <input type="text" class="form-control" id="inputForm2" placeholder="Ingrese un artículo">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                <button id="eliminarCompra" class="btn btn-danger mt-3">Eliminar última compra</button>
+
+                <h3 class="mt-5">Lista de Compras</h3>
+                <ul id="listaCompras" class="list-group mt-3"></ul> 
+            </div>
+
+            <div class="grid-item">
+                <h2>Formulario 3</h2>
+                <form id="formularioBucle">
+                    <div class="mb-3">
+                        <label for="inputForm3" class="form-label">Ingrese lo que quieras</label>
+                        <input type="text" class="form-control" id="inputForm3" placeholder="Ingrese lo que quiera">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+                <button id="eliminarBucle" class="btn btn-danger mt-3">Eliminar todo</button>
+
+                <h3 class="mt-5">Lista</h3>
+                <ul id="listaBucle" class="list-group mt-3"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

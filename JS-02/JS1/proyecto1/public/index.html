@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <div class="grid-container">
+      <div class="grid-item">
+        <form id="formulario" class="form-container">
+          <div class="titulo">
+            <h1>Formulario</h1>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputFruta" class="form-label">Frutas</label>
+            <input type="text" class="form-control" id="exampleInputFruta" placeholder="Ingrese sus frutas">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputAmigos" class="form-label">Amigos</label>
+            <input type="text" class="form-control" id="exampleInputAmigos" placeholder="Ingrese sus amigos">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputNumero" class="form-label">Numero</label>
+            <input type="number" class="form-control" id="exampleInputNumero" placeholder="Ingrese sus numeros">
+          </div>
+          <button type="submit" class="btn btn-primary" id="boton">Enviar</button>
+        </form>
+  
+        <div id="contenedor">
+          <ul id="lista" class="list-group mt-3"></ul>
+          <div id="fruta"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
