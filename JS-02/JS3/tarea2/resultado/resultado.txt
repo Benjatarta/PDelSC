@@ -1,0 +1,14 @@
+Números válidos:
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+Cantidad válidos: 9
+Cantidad inválidos: 1
+Porcentaje válidos: 90.00%
