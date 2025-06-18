@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- creo el formulario -->
+    <form id="formulario">
+        <div class="titulo">
+            <h1>Formulario</h1>
+        </div>
+        <!-- creo cada dato a ingresar -->
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Nombre del animal</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Ejemplo: Mono">
+            <p id="error-nombre" class="text-danger mt-2"></p>
+            <p id="mensaje" class="mt-2"></p>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Jaúla del animal</label>
+            <input type="text" class="form-control" id="JaulaNumero" placeholder="Ejemplo: 1, 2, 3">
+            <p id="error-jaula" class="text-danger mt-2"></p>
+            <p id="mensaje" class="mt-2"></p>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Tipo de animal</label>
+            <select class="form-select" aria-label="Default select example" id="IdTypeAnimal">
+            <option value="1">Félino</option>
+            <option value="2">Ave</option>
+            <option value="3">Reptil</option>
+            <option value="4">Mamífero</option>
+        </select>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Peso del animal</label>
+            <input type="text" class="form-control" id="peso" placeholder="Ejemplo: 15kg">
+            <p id="error-peso" class="text-danger mt-2"></p>
+            <p id="mensaje" class="mt-2"></p>
+        </div>
+        <!-- creo los botones -->
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <button id="mostrarResultadosBtn" type="button" class="btn btn-primary">Mostrar Resultados</button>
+    </form>
+    <script type="module" src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
