@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    justify-self: center;
+    margin-top: 2vh;
+    padding-bottom: 2vh;
+}
+#mostrar{
+    background-color: #2baf55;
+    border: none;
+    color: white;
+    padding: 1vw 1vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2vh;
+    border-radius: 1vh;
+    cursor: pointer;
+    justify-content: left;
+    margin-right: 2vh;
+}
+.container{
+    justify-items: center;
+}
+#contenido{
+    background: #827777;
+    max-width: max-content;
+    border-radius: 1vh;
+}
+#sugerencias {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    max-height: 180px;
+    overflow-y: auto;
+    z-index: 1000;
+}
