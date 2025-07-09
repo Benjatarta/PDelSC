@@ -34,3 +34,17 @@ form{
 #lista li{
     font-size: 3vh;
 }
+@media screen and (max-width: 425px) {
+    form{
+        display: inline-flexbox;
+        justify-self: center;
+        width: 75vw;
+        padding: 1vh;
+        background: rgb(241, 241, 241);
+        border-radius: 2vh;
+        box-shadow: 5px 5px 5px 5px #888888;
+    }
+    .titulo{
+        font-size: 1vh;
+    }
+}
